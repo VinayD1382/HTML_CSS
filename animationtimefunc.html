@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation_timing</title>
+</head>
+<style>
+    div {
+        background-color: blue;
+        width: 100px;
+        height: 100px;
+        margin-left: 50px;
+        margin-bottom: 25px;
+        animation: move 3s;
+        position: relative;
+    }
+    .box1{
+        animation-timing-function: linear;
+    }
+    .box2{
+        animation-timing-function: ease;
+    }
+    .box3{
+        animation-timing-function: ease-in;
+    }
+    .box4{
+        animation-timing-function: ease-in-out;
+    }
+    .box5{
+        animation-timing-function: steps(2,end);
+    }
+    
+    @keyframes move{
+         from{left:0px;}
+         to{left:400px;}
+    }
+</style>
+
+<body>
+    <div class="box1">
+        <p style="margin-left: 20px; color: aliceblue;">BOX1</p>
+    </div>
+    <div class="box2">
+        <p style="margin-left: 20px; color: aliceblue;">BOX2</p>
+    </div>
+    <div class="box3">
+        <p style="margin-left: 20px; color: aliceblue;">BOX3</p>
+    </div>
+    <div class="box4">
+        <p style="margin-left: 20px; color: aliceblue;">BOX4</p>
+    </div>
+    <div class="box5">
+        <p style="margin-left: 20px; color: aliceblue;">BOX5</p>
+    </div>
+
+</body>
+
+</html>
